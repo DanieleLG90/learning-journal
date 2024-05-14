@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 480px;
+    min-height: 100dvh;
+}
+
+header,
+footer{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.focus-blog{
+    background-color: aqua;
+    width: 100%;
+    height: 250px;
+}
+
+.container{
+    width: 100%;
+    height: 250px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.blog{
+    background-color: red;
+    width: 100%;
+    height: 60px;
+
+}
+
+@media(min-width:768px){
+    .focus-blog{
+        background-color: blue;
+    }
+}
