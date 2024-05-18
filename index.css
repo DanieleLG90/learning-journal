@@ -15,13 +15,13 @@ header{
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    
+    justify-content: space-between;
     padding: 1em 1em;
 }
 
 .header-logo{
     margin: auto 0;
-    margin-right: auto;
+    
 }
 .logo,
 .title{
@@ -44,12 +44,10 @@ header{
 .header-link{
     margin: auto 0;
     margin-left: auto;
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .header-link a{
+    margin-right: 5px;
     text-decoration: none;
     color: black;
     font-size: 0.75rem;
