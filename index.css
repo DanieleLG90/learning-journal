@@ -4,7 +4,8 @@
 }
 
 body{
-    width: 480px;
+    min-height: 320px;
+    max-width: 480px;
     min-height: 100dvh;
     margin: 0 auto;
 }
