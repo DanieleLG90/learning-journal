@@ -4,8 +4,9 @@
 }
 
 body{
-    
+    width: 480px;
     min-height: 100dvh;
+    margin: 0 auto;
 }
 /*===HEADER===*/
 header{
@@ -45,15 +46,21 @@ header{
 .header-link a{
     text-decoration: none;
     color: black;
+    font-size: 1rem;
     font-weight: 550;
 }
 /*=== ===*/
+/*===MAIN BLOG===*/
 .focus-blog{
-    background-color: aqua;
     width: 100%;
-    height: 250px;
+    background-image: url('images/offthegridoffice-1-1920x1080.jpg');
+    color: white;
 }
 
+.focus-blog h3{
+    padding-top: 35px;
+}
+/*=== ===*/
 .container{
     width: 100%;
     height: 250px;
