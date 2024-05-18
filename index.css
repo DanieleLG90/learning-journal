@@ -19,6 +19,9 @@ header{
     padding: 1em 1em;
 }
 
+.header-logo{
+    margin: auto 0;
+}
 .logo,
 .title{
     display:inline;
