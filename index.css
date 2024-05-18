@@ -50,18 +50,18 @@ header{
     margin-right: 5px;
     text-decoration: none;
     color: black;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 550;
 }
 /*=== ===*/
 /*===MAIN BLOG===*/
-.focus-blog{
+.main-blog{
     width: 100%;
     background-image: url('images/offthegridoffice-1-1920x1080.jpg');
     color: white;
 }
 
-.focus-blog h3{
+.main-blog h3{
     padding-top: 35px;
 }
 /*=== ===*/
