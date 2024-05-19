@@ -58,6 +58,7 @@ header{
 .main-blog{
     width: 100%;
     background-image: url('images/offthegridoffice-1-1920x1080.jpg');
+    background-size: cover;
     color: white;
 }
 
