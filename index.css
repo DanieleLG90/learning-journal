@@ -61,8 +61,24 @@ header{
     color: white;
 }
 
+.main-blog div{
+    padding: 90px 25px 10px 15px;
+}
+
 .main-blog h3{
-    padding-top: 35px;
+    font-size: 0.65rem;
+    color: lightgray;
+    margin-bottom: 0.5em;
+}
+
+.main-blog h2{
+    font-size: 2.5rem;
+    margin-bottom: 0.25em;
+}
+
+.main-blog p{
+    font-size: 1rem;
+    font-weight: 200;
 }
 /*=== ===*/
 .container{
