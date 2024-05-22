@@ -85,7 +85,6 @@ header{
 /*=== BLOG ===*/
 .container{
     width: 100%;
-    height: 250px;
     margin: 10px 0;
     padding: 10px;
     box-sizing: border-box;
@@ -107,7 +106,27 @@ header{
     object-position: top;
     border-radius: 4px;
 }
+/*=== ===*/
+/*=== FOOTER ===*/
 
+footer{
+    background-color: darkslategray;
+    text-align: center;
+    color: whitesmoke;
+    padding: 15px;
+    margin: auto 0;
+}
+
+footer h3{
+    font-size: 0.75rem;
+}
+
+footer h4{
+    font-size: 0.65rem;
+    font-weight: lighter;
+}
+
+/*=== ===*/
 @media(min-width:768px){
     .focus-blog{
         background-color: blue;
