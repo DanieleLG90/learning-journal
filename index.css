@@ -4,8 +4,10 @@
 }
 
 body{
+    /*
     min-height: 320px;
     max-width: 480px;
+    */
     min-height: 100dvh;
     margin: 0 auto;
 }
@@ -147,6 +149,9 @@ footer h4{
 }
 
 /*=== ===*/
+
+/*===  ===*/
+
 @media(min-width:768px){
     .focus-blog{
         background-color: blue;
