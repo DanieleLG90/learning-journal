@@ -153,7 +153,29 @@ footer h4{
 /*===  ===*/
 
 @media(min-width:768px){
-    .focus-blog{
-        background-color: blue;
+    body{
+        width: 65%;
     }
+    .main-blog{
+        height: 400px;
+        background-image: url(images/houseFullPlant.webp);
+        text-shadow: 0 0 3px black;
+        display: flex;
+        align-items: end;
+    }
+
+    .main-blog div{
+       padding-bottom: 25px;
+    }
+    .main-blog p{
+        width: 60%;
+        color: whitesmoke;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+
 }
