@@ -150,12 +150,34 @@ footer h4{
 
 /*=== ===*/
 
-/*===  ===*/
+/*=== MEDIA LARGER SCREEN ===*/
 
 @media(min-width:768px){
     body{
         width: 65%;
     }
+
+    header{
+        padding: 2em 2em;
+    }
+
+    .logo{
+        font-size: 1.75rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .header-link{
+        display: flex;
+        gap: 50px;
+    }
+
+    .header-link a{
+        font-size: 1.2rem;
+    }
+
     .main-blog{
         height: 400px;
         background-image: url(images/houseFullPlant.webp);
@@ -167,15 +189,22 @@ footer h4{
     .main-blog div{
        padding-bottom: 25px;
     }
+
     .main-blog p{
         width: 60%;
         color: whitesmoke;
     }
 
     .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 5px;
+    }
+
+    .blog{
+        flex-basis: 33%;
+        flex-grow: 1;
     }
 
 }
