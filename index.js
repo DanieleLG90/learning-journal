@@ -1,11 +1,14 @@
 import { plants } from "./data.js";
 const blogContainer = document.getElementById('blog-container')
+const loadMore = document.getElementById('loadMore')
 
 //console.log(plants)
+let displayedObjects = plants.slice(0, 3);
 
-function firstDisplayBlog (blogs){
+function firstDisplayBlog (){
+   // const firstThreeObjects = blogs.slice(0, 3);
     let emptyHtml =''
-     blogs.forEach(function(blog){
+     displayedObjects.forEach(function(blog){
         emptyHtml += `<div class="blog">
                     <img src='${blog.img}' alt="${blog.titolo} plant">
                     <h3>${blog.date}</h3>
@@ -19,4 +22,10 @@ function firstDisplayBlog (blogs){
     return emptyHtml
 }
 
-blogContainer.innerHTML= firstDisplayBlog(plants)
+loadMore.addEventListener('click', function(){
+    displayedObjects = plants.slice(0, 6)
+    firstDisplayBlog()
+    blogContainer.innerHTML= firstDisplayBlog()
+})
+
+blogContainer.innerHTML= firstDisplayBlog()
