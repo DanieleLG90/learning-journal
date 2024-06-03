@@ -133,6 +133,17 @@ header{
     border-radius: 3px;
 }
 /*=== ===*/
+
+/*=== VIEW MORE BTN ===*/
+.load-more{
+    display: block;
+    background: none;
+    font-size: 1rem;
+    margin: 0.5em auto 0.5em auto;
+    border: none;
+    border-bottom: 2px solid black;
+}
+/*=== ===*/
 /*=== FOOTER ===*/
 
 footer{
