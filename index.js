@@ -41,15 +41,5 @@ loadMore.addEventListener('click', function(){
    // blogContainer.innerHTML= firstDisplayBlog()
 })
 
-
-/*
-if(displayedObjects.length < plants.length){
-    displayedObjects = plants.slice(0, 6)
-    firstDisplayBlog()
-    blogContainer.innerHTML= firstDisplayBlog()
-} else{
-    firstDisplayBlog()
-    blogContainer.innerHTML= firstDisplayBlog()
-    loadMore.textContent = 'View Less'
-}
-*/
+let testLength = displayedObjects + 3
+console.log(testLength.length)
