@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*
+    min-height: 320px;
+    max-width: 480px;
+    */
+    min-height: 100dvh;
+    margin: 0 auto;
+}
+/*===HEADER===*/
+header{
+    background-color: whitesmoke;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+}
+
+.header-logo{
+    margin: auto 0;
+    
+}
+.logo,
+.title{
+    display:inline;
+}
+
+.logo{
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.title{
+    font-size: 0.8rem;
+}
+
+.header-link{
+    margin: auto 0;
+    margin-left: auto;
+}
+
+.header-link a{
+    margin-right: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+/*=== ===*/
