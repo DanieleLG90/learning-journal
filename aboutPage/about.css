@@ -56,3 +56,30 @@ header{
     font-weight: 550;
 }
 /*=== ===*/
+/*=== MEDIA LARGER SCREEN ===*/
+@media(min-width:768px){
+    body{
+        width: 70%;
+    }
+
+    header{
+        padding: 1.75em 2em;
+    }
+
+    .logo{
+        font-size: 1.75rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .header-link{
+        display: flex;
+        gap: 50px;
+    }
+
+    .header-link a{
+        font-size: 1.2rem;
+    }
+}
