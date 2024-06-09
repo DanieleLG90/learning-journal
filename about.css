@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -56,6 +57,22 @@ header{
     font-weight: 550;
 }
 /*=== ===*/
+
+/*=== INTRODUCTION ===*/
+.presentation-container{
+    margin-top: 10px;
+    padding: 0 5px;
+}
+
+.aboutMe-img{
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 /*=== MEDIA LARGER SCREEN ===*/
 @media(min-width:768px){
     body{
