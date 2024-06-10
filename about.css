@@ -73,6 +73,15 @@ header{
     object-fit: cover;
     border-radius: 10px;
 }
+
+.introduction{
+    padding: 0 5px;
+}
+
+.introduction h3{
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
 /*=== MEDIA LARGER SCREEN ===*/
 @media(min-width:768px){
     body{
