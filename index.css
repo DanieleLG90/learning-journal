@@ -177,7 +177,7 @@ footer h4{
     }
 
     .logo{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .title{
@@ -191,6 +191,7 @@ footer h4{
 
     .header-link a{
         font-size: 1.2rem;
+        font-weight: lighter;
     }
 
     .main-blog{

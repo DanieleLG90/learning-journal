@@ -184,7 +184,7 @@ footer h4{
     }
 
     .logo{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .title{
@@ -198,6 +198,7 @@ footer h4{
 
     .header-link a{
         font-size: 1.2rem;
+        font-weight: lighter;
     }
 /*=== ===*/
 /*===INTRODUCTION ===*/
@@ -213,21 +214,38 @@ footer h4{
 
     .introduction{
         margin: auto 0;
+        padding-right: 5em;
     }
-
+/*=== ===*/
+/*=== STORY ===*/
+    .story-container{
+        padding: 0 5em;
+    }
+    .story-container h4,
+    .story-container p{
+        margin-bottom: 16px;
+    }
+/*=== RECENT BLOG ===*/
     .blog-container{
         margin-top: 2.5em;
     }
 
     .container{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        /*
         flex-direction: row;
         flex-wrap: wrap;
+        */
         gap: 5px;
     }
 
     .blog{
+        grid-column: 1fr;
+        /*
         flex-basis: 33%;
         flex-grow: 1;
+        */
     }
+/*=== ===*/
 }
