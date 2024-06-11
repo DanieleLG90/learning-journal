@@ -23,22 +23,6 @@ function firstDisplayBlog (){
 }
 
 blogContainer.innerHTML= firstDisplayBlog()
-/*
-loadMore.addEventListener('click', function(){
-    if(displayedObjects.length < plants.length){
-        displayedObjects = plants.slice(0, 6)
-        firstDisplayBlog ()
-        blogContainer.innerHTML= firstDisplayBlog()
-        loadMore.textContent = 'View Less'
-    } else{
-        displayedObjects = plants.slice(0, 3)
-        firstDisplayBlog ()
-        blogContainer.innerHTML= firstDisplayBlog()
-        loadMore.textContent = 'View More'
-    }
-   
-})
-*/
 
 function checkMediaQuery() {
     if (window.matchMedia('(max-width: 480px)').matches) {
