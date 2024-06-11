@@ -178,7 +178,7 @@ footer h4{
     body{
         width: 70%;
     }
-
+/*=== HEADER ===*/
     header{
         padding: 1.75em 2em;
     }
@@ -198,5 +198,36 @@ footer h4{
 
     .header-link a{
         font-size: 1.2rem;
+    }
+/*=== ===*/
+/*===INTRODUCTION ===*/
+    .presentation-container{
+        margin: 2em 0;
+        display: flex;
+    }
+
+    .aboutMe-img{
+        margin-right: 10px;
+        width: 25%;
+    }
+
+    .introduction{
+        margin: auto 0;
+    }
+
+    .blog-container{
+        margin-top: 2.5em;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .blog{
+        flex-basis: 33%;
+        flex-grow: 1;
     }
 }
