@@ -20,3 +20,27 @@ function firstDisplayBlog (){
  }
  
  blogContainer.innerHTML= firstDisplayBlog()
+
+ function checkMediaQuery() {
+    if (window.matchMedia('(max-width: 480px)').matches) {
+
+        displayedObjects = plants.slice(0, 2)
+        firstDisplayBlog ()
+        blogContainer.innerHTML= firstDisplayBlog()
+     
+    } else if (window.matchMedia('(min-width: 768px) and (max-width: 1200px)').matches) {
+
+        displayedObjects = plants.slice(0, 2)
+        firstDisplayBlog ()
+        blogContainer.innerHTML= firstDisplayBlog()
+
+    } else if(window.matchMedia('(min-width: 1280px)').matches){
+
+        displayedObjects = plants.slice(0, 3)
+        firstDisplayBlog ()
+        blogContainer.innerHTML= firstDisplayBlog()
+    }
+  }
+
+  window.addEventListener('resize', checkMediaQuery);
+  checkMediaQuery();
