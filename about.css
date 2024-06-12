@@ -244,8 +244,35 @@ footer h4{
 /*=== ===*/
 }
 
+@media(min-width:768px){
+    body{
+        width: 99%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .blog{
+        grid-column: 1fr;
+    }
+}
+
 @media(min-width:1280px){
     body{
         width: 70%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .blog{
+        flex-basis: 33%;
+        flex-grow: 1;
     }
 }
