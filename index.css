@@ -65,6 +65,7 @@ header{
     background-image: url('images/houseFullPlant.webp');
     background-size: cover;
     color: white;
+    cursor: pointer;
 }
 
 .main-blog div{
