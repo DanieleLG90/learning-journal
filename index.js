@@ -70,3 +70,8 @@ function checkMediaQuery() {
 
   window.addEventListener('resize', checkMediaQuery);
   checkMediaQuery();
+
+  const mainBtn = document.getElementById('main');
+  mainBtn.addEventListener('click', function() {
+    window.location.href = 'blog.html';
+  });
