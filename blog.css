@@ -94,6 +94,7 @@ header{
     height: 280px;
     padding: 0 10px;
     object-fit: cover;
+    /*object-position: bottom;*/
 }
 /*=== ===*/
 /*=== STORY ===*/
@@ -187,3 +188,93 @@ footer h4{
     font-weight: lighter;
 }
 /*=== ===*/
+
+/*=== MEDIA LARGER SCREEN ===*/
+
+@media(min-width:480px){
+    body{
+        width: 100%;
+    }
+
+    header{
+        padding: 1.75em 2em;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .header-link{
+        display: flex;
+        gap: 50px;
+    }
+
+    .header-link a{
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+    .main-blog{
+        padding: 0 10px;
+    }
+    .main-blog div{
+        padding: 0 5em;
+    }
+
+    .story-container{
+        padding: 0 5em;
+    }
+    .story-container h4,
+    .story-container p{
+        margin-bottom: 16px;
+    }
+/*=== RECENT BLOG ===*/
+    .blog-container{
+        margin-top: 2.5em;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .blog{
+        flex-basis: 33%;
+        flex-grow: 1;
+    }
+}
+@media(min-width:768px){
+    body{
+        width: 99%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .blog{
+        grid-column: 1fr;
+    }
+}
+
+@media(min-width:1280px){
+    body{
+        width: 70%;
+    }
+  
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+
+    .blog{
+        grid-column: 1fr;
+    }
+}

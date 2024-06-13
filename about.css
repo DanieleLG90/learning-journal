@@ -276,7 +276,6 @@ footer h4{
     }
 
     .blog{
-        grid-column: 1fr
-        ;
+        grid-column: 1fr;
     }
 }
