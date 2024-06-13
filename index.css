@@ -246,6 +246,11 @@ footer h4{
     body{
         width: 70%;
     }
+
+    .main-blog{
+        background-position: center;
+    }
+  
   
     .container{
         grid-template-columns: 1fr 1fr 1fr;
