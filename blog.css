@@ -83,7 +83,7 @@ header{
 
 .main-blog p{
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .mainBlog-img{
@@ -217,6 +217,7 @@ footer h4{
     .main-blog{
         padding: 0 10px;
     }
+
     .main-blog div{
         padding: 0 5em;
     }
