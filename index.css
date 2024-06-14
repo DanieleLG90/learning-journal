@@ -4,12 +4,9 @@
 }
 
 body{
-    /*
-    min-height: 320px;
-    max-width: 480px;
-    */
     min-height: 100dvh;
     margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
 }
 /*===HEADER===*/
 header{
@@ -67,6 +64,7 @@ header{
     background-size: cover;
     color: white;
     cursor: pointer;
+    text-shadow: 0 0 8px black;
 }
 
 .main-blog div{
@@ -87,7 +85,7 @@ header{
 
 .main-blog p{
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 /*=== ===*/
 /*=== BLOG ===*/
@@ -193,7 +191,6 @@ footer h4{
 
     .header-link a{
         font-size: 1.2rem;
-        font-weight: lighter;
     }
 
     .main-blog{
@@ -212,7 +209,7 @@ footer h4{
 
     .main-blog p{
         width: 60%;
-        color: whitesmoke;
+        font-weight: 400;
     }
 
     .container{

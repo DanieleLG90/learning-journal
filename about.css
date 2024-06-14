@@ -5,12 +5,9 @@
 }
 
 body{
-    /*
-    min-height: 320px;
-    max-width: 480px;
-    */
     min-height: 100dvh;
     margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
 }
 /*===HEADER===*/
 header{
@@ -198,7 +195,6 @@ footer h4{
 
     .header-link a{
         font-size: 1.2rem;
-        font-weight: lighter;
     }
 /*=== ===*/
 /*===INTRODUCTION ===*/
