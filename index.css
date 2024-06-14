@@ -67,6 +67,11 @@ header{
     text-shadow: 0 0 8px black;
 }
 
+.overlay{
+    border-image-source: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+    border-image-slice: fill 1 ;
+}
+
 .main-blog div{
     padding: 0 10px 10px 15px;
 }
