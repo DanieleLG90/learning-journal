@@ -15,7 +15,7 @@ header{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 1em 1em;
+    padding: 1em 0.2em;
 }
 
 .header-logo{
@@ -42,11 +42,11 @@ header{
 
 .header-link{
     margin: auto 0;
-    margin-left: auto;
 }
 
 .header-link a{
     margin-right: 5px;
+    margin-left: 12px;
     text-decoration: none;
     color: black;
     font-size: 0.8rem;

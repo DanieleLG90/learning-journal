@@ -32,7 +32,7 @@ function checkMediaQuery() {
                 firstDisplayBlog ()
                 blogContainer.innerHTML= firstDisplayBlog()
                 loadMore.textContent = 'View Less'
-            } else{
+            } else if(displayedObjects.length === plants.length){
                 displayedObjects = plants.slice(0, 3)
                 firstDisplayBlog ()
                 blogContainer.innerHTML= firstDisplayBlog()
