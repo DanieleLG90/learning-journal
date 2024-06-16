@@ -25,14 +25,20 @@ function firstDisplayBlog (){
 blogContainer.innerHTML= firstDisplayBlog()
 
 function checkMediaQuery() {
+
     if (window.matchMedia('(max-width: 480px)').matches) {
+
+        displayedObjects = plants.slice(0, 3);
+        //firstDisplayBlog()
+        blogContainer.innerHTML= firstDisplayBlog()
+
         loadMore.addEventListener('click', function(){
             if(displayedObjects.length < plants.length){
-                displayedObjects = plants.slice(0, 6)
+                displayedObjects = plants
                 firstDisplayBlog ()
                 blogContainer.innerHTML= firstDisplayBlog()
                 loadMore.textContent = 'View Less'
-            } else if(displayedObjects.length === plants.length){
+            } else {
                 displayedObjects = plants.slice(0, 3)
                 firstDisplayBlog ()
                 blogContainer.innerHTML= firstDisplayBlog()
@@ -40,15 +46,17 @@ function checkMediaQuery() {
             }
            
         })
-        loadMore.style.display = 'block'
+        loadMore.style.display = 'block'    
+
     }else if(window.matchMedia('(min-width: 768px) and (max-width: 1200px)').matches){
+
         displayedObjects = plants.slice(0, 4);
         firstDisplayBlog ()
         blogContainer.innerHTML= firstDisplayBlog()
 
         loadMore.addEventListener('click', function(){
             if(displayedObjects.length < plants.length){
-                displayedObjects = plants.slice(0, 6)
+                displayedObjects = plants
                 firstDisplayBlog ()
                 blogContainer.innerHTML= firstDisplayBlog()
                 loadMore.textContent = 'View Less'
@@ -61,17 +69,18 @@ function checkMediaQuery() {
         })
         loadMore.style.display = 'block'
     } else if(window.matchMedia('(min-width: 1280px)').matches) {
-        displayedObjects = plants.slice(0, 6);
+
+        displayedObjects = plants;
         firstDisplayBlog ()
         blogContainer.innerHTML= firstDisplayBlog()
         loadMore.style.display = 'none'
     }
-  }
+}
 
-  window.addEventListener('resize', checkMediaQuery);
-  checkMediaQuery();
+window.addEventListener('resize', checkMediaQuery);
+checkMediaQuery();
 
-  const mainBtn = document.getElementById('main');
-  mainBtn.addEventListener('click', function() {
-    window.location.href = 'blog.html';
-  });
+const mainBtn = document.getElementById('main');
+mainBtn.addEventListener('click', function() {
+window.location.href = 'blog.html';
+});
