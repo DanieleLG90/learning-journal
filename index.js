@@ -23,31 +23,24 @@ function firstDisplayBlog (){
 
 blogContainer.innerHTML= firstDisplayBlog()
 
+loadMore.addEventListener('click', function(){
+    if(displayedObjects.length < plants.length){
+        displayedObjects = plants.slice(0, 6)
+        firstDisplayBlog ()
+        blogContainer.innerHTML= firstDisplayBlog()
+        loadMore.textContent = 'View Less'
+    } else {
+        displayedObjects = plants.slice(0, 3)
+        firstDisplayBlog ()
+        blogContainer.innerHTML= firstDisplayBlog()
+        loadMore.textContent = 'View More'
+    }
+   
+})
+
 function checkMediaQuery() {
 
-    if (window.matchMedia('(max-width: 580px)').matches) {
-
-        displayedObjects = plants.slice(0, 3);
-        firstDisplayBlog()
-        blogContainer.innerHTML= firstDisplayBlog()
-
-        loadMore.addEventListener('click', function(){
-            if(displayedObjects.length < plants.length){
-                displayedObjects = plants.slice(0, 6)
-                firstDisplayBlog ()
-                blogContainer.innerHTML= firstDisplayBlog()
-                loadMore.textContent = 'View Less'
-            } else {
-                displayedObjects = plants.slice(0, 3)
-                firstDisplayBlog ()
-                blogContainer.innerHTML= firstDisplayBlog()
-                loadMore.textContent = 'View More'
-            }
-           
-        })
-        loadMore.style.display = 'block'    
-
-    }else if(window.matchMedia('(min-width: 768px) and (max-width: 1200px)').matches){
+    if(window.matchMedia('(min-width: 768px) and (max-width: 1200px)').matches){
 
         displayedObjects = plants.slice(0, 4);
         firstDisplayBlog ()
@@ -73,6 +66,28 @@ function checkMediaQuery() {
         firstDisplayBlog ()
         blogContainer.innerHTML= firstDisplayBlog()
         loadMore.style.display = 'none'
+    } else{
+
+        displayedObjects = plants.slice(0, 3);
+        firstDisplayBlog ()
+        blogContainer.innerHTML= firstDisplayBlog()
+
+        loadMore.addEventListener('click', function(){
+            if(displayedObjects.length < plants.length){
+                displayedObjects = plants.slice(0, 6)
+                firstDisplayBlog ()
+                blogContainer.innerHTML= firstDisplayBlog()
+                loadMore.textContent = 'View Less'
+            } else {
+                displayedObjects = plants.slice(0, 3)
+                firstDisplayBlog ()
+                blogContainer.innerHTML= firstDisplayBlog()
+                loadMore.textContent = 'View More'
+            }
+           
+        })
+
+        loadMore.style.display = 'block'
     }
 }
 
