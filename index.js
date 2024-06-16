@@ -6,7 +6,6 @@ const loadMore = document.getElementById('loadMore')
 let displayedObjects = plants.slice(0, 3);
 
 function firstDisplayBlog (){
-   // const firstThreeObjects = blogs.slice(0, 3);
     let emptyHtml =''
      displayedObjects.forEach(function(blog){
         emptyHtml += `<div class="blog">
@@ -26,15 +25,15 @@ blogContainer.innerHTML= firstDisplayBlog()
 
 function checkMediaQuery() {
 
-    if (window.matchMedia('(max-width: 480px)').matches) {
+    if (window.matchMedia('(max-width: 580px)').matches) {
 
         displayedObjects = plants.slice(0, 3);
-        //firstDisplayBlog()
+        firstDisplayBlog()
         blogContainer.innerHTML= firstDisplayBlog()
 
         loadMore.addEventListener('click', function(){
             if(displayedObjects.length < plants.length){
-                displayedObjects = plants
+                displayedObjects = plants.slice(0, 6)
                 firstDisplayBlog ()
                 blogContainer.innerHTML= firstDisplayBlog()
                 loadMore.textContent = 'View Less'
