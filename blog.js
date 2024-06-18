@@ -42,5 +42,22 @@ function firstDisplayBlog (){
     }
   }
 
-  window.addEventListener('resize', checkMediaQuery);
-  checkMediaQuery();
+window.addEventListener('resize', checkMediaQuery);
+checkMediaQuery();
+
+
+function blogPage(){
+    window.location.href = 'blog.html';
+}
+
+function homePage(){
+    window.location.href = 'index.html';
+}
+
+const blogElm = document.querySelectorAll('.blog'); 
+for (const element of blogElm) {
+   element.addEventListener('click', blogPage);
+}
+
+const logo = document.getElementById('logo');
+logo.addEventListener('click', homePage);

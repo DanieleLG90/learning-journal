@@ -8,14 +8,14 @@ let displayedObjects = plants.slice(0, 3);
 function firstDisplayBlog (){
     let emptyHtml =''
      displayedObjects.forEach(function(blog){
-        emptyHtml += `<div class="blog">
+        emptyHtml += `<div class='blog'>
                     <img src='${blog.img}' alt="${blog.titolo} plant">
                     <h3>${blog.date}</h3>
                     <h2>${blog.titolo}</h2>
                     <p>
                         ${blog.descrizione}
                     </p>
-                    <button>Read more</button>
+                    <button class='readMore-btn'>Read more</button>
                 </div>`
     });
     return emptyHtml
@@ -82,6 +82,21 @@ loadMore.addEventListener('click', function(){
 
 
 const mainBtn = document.getElementById('main');
-mainBtn.addEventListener('click', function() {
-window.location.href = 'blog.html';
-});
+//const logo = document.getElementById('logo');
+
+mainBtn.addEventListener('click', blogPage);
+//logo.addEventListener('click', homePage);
+
+
+function blogPage(){
+    window.location.href = 'blog.html';
+}
+
+/*function homePage(){
+    window.location.href = 'index.js';
+}*/
+
+const blogElm = document.querySelectorAll('.blog'); 
+for (const element of blogElm) {
+  element.addEventListener('click', blogPage);
+}
